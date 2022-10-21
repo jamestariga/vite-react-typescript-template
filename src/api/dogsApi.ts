@@ -1,5 +1,5 @@
 import axios from 'axios'
-import DogsRequest from '../types/types'
+import { DogsRequest } from '../types/types'
 
 const dogApi = axios.create({
   baseURL: 'https://dog.ceo/api',

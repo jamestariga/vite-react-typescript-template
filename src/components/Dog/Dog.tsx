@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import DogsRequest from '../../types/types'
+import { DogsRequest } from '../../types/types'
 import { getDogs } from '../../api/dogsApi'
 
 const Dog = () => {
@@ -10,7 +10,7 @@ const Dog = () => {
 
   return (
     <>
-      <div className='flex flex-col just-center items-center gap-10 bg-red-200'>
+      <div className='flex flex-col justify-center items-center gap-10 bg-red-200'>
         {data?.message
           ?.map((message, i) => (
             <div key={i}>

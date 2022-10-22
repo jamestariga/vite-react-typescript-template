@@ -1,5 +1,6 @@
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
 import Dog from './components/Dog'
+import Populations from './components/Populations'
 
 const App = () => {
   const queryClient = new QueryClient({
@@ -13,7 +14,8 @@ const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <div>
-        <Dog />
+        {/* <Dog /> */}
+        <Populations />
       </div>
     </QueryClientProvider>
   )
